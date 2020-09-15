@@ -1,0 +1,170 @@
+/* 
+***************************************    [Table of Contents]   *******************************
+
+1. Root Variables
+2. Body and some general stuff
+    2.1 Icon
+    2.2 Images
+	2.3 Header Logo
+	2.4 Cards
+	2.5 Body Heading
+	2.6 Profile Size
+3. Wheel Menu
+*/
+
+/* 1. Root Variables */
+:root {
+--main-font-family: 'Muli', 'sans-serif';
+--icons-color: #fff;
+--images-width: 100%;
+--images-border-radius: 0.5rem;
+--logo-height: 2.8rem;
+--logo-width: 2.8rem;
+--logo-border-radius: 0.5rem;
+--heading-alignment: center;
+--heading-margin-top: 19rem;
+--heading-margin-bottom: 1rem!important;
+--heading-color: #212529;
+--heading-font-weight: 700!important;
+--content-font-size: 0.8rem;
+--footer-content-size: 0.7rem;
+--footer-icon-size: 0.7rem;
+--profile-height: 2.8rem;
+--profile-width: 2.8rem;
+}
+
+/* 2. Body and some general stuff */
+body {
+font-family: var(--main-font-family);
+}
+
+i {
+color: var(--icons-color);
+}
+
+.images-size {
+width: var(--images-width);
+border-radius: var(--images-border-radius);
+}
+
+.logo-size {
+height: var(--logo-height);
+width: var(--logo-width);
+border-radius: var(--logo-border-radius);
+}
+
+.content-size {
+font-size: var(--content-font-size);
+font-weight: var(--heading-font-weight);
+}
+.footer-size {
+font-size: var(--footer-content-size);
+}
+.icons-style {
+font-size: var(--footer-icon-size);
+}
+
+.heading-style {
+text-align: var(--heading-alignment);
+margin-top: var(--heading-margin-top);
+margin-bottom: var(--heading-margin-bottom);
+color: var(--heading-color);
+font-weight: var(--heading-font-weight);
+}
+
+.profile-size {
+	height: var(--profile-height);
+	width: var(--profile-width);
+}
+
+/* 3. Wheel Menu */
+#wheel
+{
+width:250px;
+height:250px;
+background-color:gray;
+border:5px dotted;
+border-radius:200px;
+overflow:hidden;
+position: absolute;
+
+}
+
+#wheel:hover
+{
+transform: translate(0px) rotate(680deg);
+transition: transform 2s ease-in;
+
+}
+
+#wheel div.sec{
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 130px 75px 0;
+border-color: #19c transparent;
+transform-origin: 75px 129px;
+left:50px;
+top:0px;	
+opacity:1;
+}
+
+#wheel div.sec:nth-child(1){
+transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-moz-transform: rotate(60deg);
+-o-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+border-color: white transparent;	 
+}
+#wheel div.sec:nth-child(2){
+transform: rotate(120deg);
+-webkit-transform: rotate(120deg);
+-moz-transform: rotate(120deg);
+-o-transform: rotate(120deg);
+-ms-transform: rotate(120deg);
+border-color: white transparent;	
+}
+#wheel div.sec:nth-child(3){
+transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+border-color: white transparent;	
+}
+#wheel div.sec:nth-child(4){
+transform: rotate(240deg);
+-webkit-transform: rotate(240deg);
+-moz-transform: rotate(240deg);
+-o-transform: rotate(240deg);
+-ms-transform: rotate(240deg);
+border-color: white transparent;	
+}
+#wheel div.sec:nth-child(5){
+transform: rotate(300deg);
+-webkit-transform: rotate(300deg);
+-moz-transform: rotate(300deg);
+-o-transform: rotate(300deg);
+-ms-transform: rotate(300deg);
+border-color: white transparent;	
+}
+#wheel div.sec:nth-child(6){
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+border-color: white transparent;	
+}
+
+#wheel div.sec .fa{
+margin-top: -100px;
+color: rgba(0,0,0,0.5);
+position: relative;
+display: block;
+text-align: center;
+font-size:36px;
+margin-left:-15px;
+}
