@@ -1,0 +1,19 @@
+1. Header - 
+** The header is responsive and contains general menu icons.
+** Since the user is on the first page and is visiting the website for the first time, so the icon is appearing in the top right corner without image, because the user is yet not logged in.
+** Completely responsive in all the devices.
+
+2. Body Content -
+** Here is some content, and the wheel menu which rotates, once you hover on it.
+
+3. Cards -
+** It contains the few life messages in card, with card image and card text.
+** Completely responsive.
+
+4. Comments and likes and share -
+** It contains the comment of an user.
+** User image is displayed.
+** The time when the comment was posted.
+** The likes of the comment.
+** The next column contains sharing options and images of some components from the website itself.
+** Completely responsive on all devices.
